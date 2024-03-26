@@ -1,9 +1,9 @@
 import Album from "../Album"
+import styles from './Library.module.css'
 
 const Library = ({updateFunction}) => {
     return(
-        <div>
-             <p>Pick an album to check out!</p>
+        <div className={styles.library}>
             < Album choice='AlbumA' updatePage={updateFunction} />
             < Album choice='AlbumB' updatePage={updateFunction} />
         </div>

@@ -1,0 +1,7 @@
+footer {
+    background-color: var(--main-bg-color);
+    height: fit-content;
+    color: rgb(124, 123, 124);
+    padding: 2px;
+    text-align: center;
+}
