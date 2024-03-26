@@ -34,8 +34,6 @@ export const CaressYourSoul = {
     songs: ['How To Fly', 'Clouds & Cream', 'Australia Street', 'These Girls', 'Sex', 'Bootleg Rascal', 'Caress Your Soul', 'Laika', 'Freddy Crabs', 'Kiss The Breeze', 'Let It All Out']
 }
 
-const albums = [Essence, TheCodeOfTheFlowers, Pellucidity, AnAwesomeWave, ShapeShifter, CaressYourSoul];
+export const albums = [Essence, TheCodeOfTheFlowers, Pellucidity, AnAwesomeWave, ShapeShifter, CaressYourSoul];
 
 export const albumTitles = albums.map(album => album.albumTitle);
-
-console.log(albumTitles);

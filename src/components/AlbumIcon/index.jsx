@@ -1,12 +1,11 @@
-import styles from './Album.module.css'
+import styles from './AlbumIcon.module.css'
 
-const Album = ({choice, updatePage}) => {
+const AlbumIcon = ({choice, updatePage}) => {
     const handleClick = () => {
         {choice === 'library' ? updatePage(null) : updatePage(choice)}
     }
 
     return(
-    
         <div className={styles.album} onClick={handleClick}>
             <p>{choice}</p>
         </div>
@@ -14,4 +13,4 @@ const Album = ({choice, updatePage}) => {
     )
 }
 
-export default Album;
+export default AlbumIcon;

@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Library from './components/Library'
 import Footer from './components/Footer'
 import DemoAlbum from './components/DemoAlbum'
+import AlbumPage from './components/AlbumPage'
 
 function App() {
 
@@ -12,8 +13,7 @@ function App() {
       <>
         < Header />
         {!page && < Library updateFunction={setPage} />}
-        {page === 'AlbumA' && <DemoAlbum updateFunction={setPage}/>}
-        {page === 'AlbumB' && <DemoAlbum updateFunction={setPage}/>}
+        {page && < AlbumPage updateFunction={setPage}/>}
         < Footer />
       </>
     )

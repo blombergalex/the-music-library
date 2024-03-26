@@ -1,5 +1,5 @@
-import Album from "../Album";
-import { Essence } from "../../data/data";
+import AlbumIcon from "../AlbumIcon";
+import { Essence, TheCodeOfTheFlowers, Pellucidity, AnAwesomeWave, ShapeShifter, CaressYourSoul } from '../../data/data'
 
 const DemoAlbum = ({updateFunction}) => {
     const {albumTitle, songs} = Essence;
@@ -9,7 +9,7 @@ const DemoAlbum = ({updateFunction}) => {
         <h4>{albumTitle}</h4>
         {songs.map((song, index) => <p key={index}>{song}</p> )}
 
-        < Album choice='library' updatePage={updateFunction} />
+        < AlbumIcon choice='library' updatePage={updateFunction} />
         
     </>    
     )
