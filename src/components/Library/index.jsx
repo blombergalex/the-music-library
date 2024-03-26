@@ -1,4 +1,5 @@
 import Album from "../Album"
+import { albumTitles } from "../../data/data"
 import styles from './Library.module.css'
 
 const Library = ({updateFunction}) => {

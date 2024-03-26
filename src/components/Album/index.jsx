@@ -6,7 +6,7 @@ const Album = ({choice, updatePage}) => {
     }
 
     return(
-        
+    
         <div className={styles.album} onClick={handleClick}>
             <p>{choice}</p>
         </div>
