@@ -6,7 +6,7 @@ const AlbumIcon = ({choice, updatePage}) => {
     }
 
     return(
-        <div className={styles.album} onClick={handleClick}>
+        <div className={styles.icon} onClick={handleClick}>
             <p>{choice}</p>
         </div>
 

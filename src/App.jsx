@@ -11,9 +11,9 @@ function App() {
   const[page, setPage] = useState(null)
     return (
       <>
-        < Header />
+        < Header/>
         {!page && < Library updateFunction={setPage} />}
-        {page && < AlbumPage updateFunction={setPage}/>}
+        {page && < AlbumPage updateFunction={setPage}/>} 
         < Footer />
       </>
     )

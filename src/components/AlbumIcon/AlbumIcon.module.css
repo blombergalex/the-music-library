@@ -1,11 +1,18 @@
-.album {
+.icon {
     aspect-ratio: 1/1;
     color: #fff;
-    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border: 3px solid #fff;
     border-radius: 5px;
     margin: 8px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    
+    box-shadow: rgba(104, 117, 213, 0.783) 0px 3px 10px;
 }
