@@ -13,7 +13,7 @@ function App() {
       <>
         < Header/>
         {!page && < Library updateFunction={setPage} />}
-        {page && < AlbumPage updateFunction={setPage}/>} 
+        {page && < AlbumPage album={page} updateFunction={setPage}/>} 
         < Footer />
       </>
     )

@@ -1,15 +1,15 @@
-// import { Essence, TheCodeOfTheFlowers, Pellucidity, AnAwesomeWave, ShapeShifter, CaressYourSoul } from '../../data/data'
 import AlbumIcon from "../AlbumIcon";
 import { albums } from "../../data/data";
 
-const AlbumPage = ({updateFunction}) => {
-    // const {albumTitle, artist, songs} = album;
+const AlbumPage = ({updateFunction, album}) => {
 
     return (
         <>
-        <h4>{albums.albumTitle}</h4>
-        <h5>{albums.artist}</h5> 
-            {/* {songs.map((song, index) => <p key={index}>{song}</p> )} */}
+
+
+        <h4>{album.albumTitle}</h4>
+        <h5>{album.artist}</h5> 
+            {album.songs.map((song, index) => <p key={index}>{song}</p> )}
 
             < AlbumIcon choice='library' updatePage={updateFunction} /> 
         </>

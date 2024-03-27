@@ -1,8 +1,8 @@
 import styles from './AlbumIcon.module.css'
 
-const AlbumIcon = ({choice, updatePage}) => {
+const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
     const handleClick = () => {
-        {choice === 'library' ? updatePage(null) : updatePage(choice)}
+        {choice === 'library' ? updatePage(null) : updatePage(chosenAlbum)}
     }
 
     return(

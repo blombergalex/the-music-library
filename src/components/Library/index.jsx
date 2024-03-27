@@ -1,12 +1,12 @@
 import AlbumIcon from "../AlbumIcon"
-import { albumTitles } from "../../data/data"
+import { albums } from "../../data/data"
 import styles from './Library.module.css'
 
 const Library = ({updateFunction}) => {
     return(
         <div className={styles.library}>
-            {albumTitles.map((title, index) => (
-            < AlbumIcon choice={title} key={index} updatePage={updateFunction}/>
+            {albums.map((album, index) => (
+            < AlbumIcon choice={album.albumTitle} chosenAlbum={album} key={index} updatePage={updateFunction}/>
             ))}
         </div>
     )
