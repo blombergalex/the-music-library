@@ -5,7 +5,7 @@ const Footer = () => {
 
     return(
         <footer>
-            <p> &#169; {currentDate} Alexandra Blomberg</p>
+            <p> &#169; {currentDate} <a href='https://github.com/blombergalex/the-music-library' target='_blank'>@blombergalex</a></p>
         </footer>
     )
 }

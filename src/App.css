@@ -5,6 +5,7 @@
   --main-bg-color: rgb(70, 76, 82);
   --light-text-color: whitesmoke;
   --dark-color: rgba(2,0,36,1);
+  --main-turquoise: rgba(9,89,121,1);
 }
 #root{
   display: flex;
