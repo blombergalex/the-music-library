@@ -12,8 +12,10 @@ function App() {
     return (
       <>
         < Header/>
-        {!page && < Library updateFunction={setPage} />}
-        {page && < AlbumPage album={page} updateFunction={setPage}/>} 
+        < div className='mainContent'>
+          {!page && < Library updateFunction={setPage} />}
+          {page && < AlbumPage album={page} updateFunction={setPage}/>} 
+        </div>
         < Footer />
       </>
     )

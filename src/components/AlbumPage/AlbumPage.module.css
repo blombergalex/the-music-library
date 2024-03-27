@@ -1,0 +1,16 @@
+.albumPage {
+    padding: 16px;
+}
+
+.albumTitle {
+    color: var(--light-text-color);
+    font-size: 1.2rem;
+}
+
+.artistName {
+    color: var(--light-text-color);
+    /* font-size */
+}
+.songTitle {
+    color: var(--light-text-color);
+}
