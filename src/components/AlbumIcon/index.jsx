@@ -8,9 +8,11 @@ const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
     return(
         <div className={styles.icon} onClick={handleClick}>
             <p>{choice}</p>
+            {/* <img src={`/images/${albumTitle}.png`}/> */}
         </div>
-
     )
 }
 
 export default AlbumIcon;
+
+
