@@ -10,5 +10,6 @@ a,
 a:active,
 a:visited {
     text-decoration: none;
+    cursor: pointer;
     color: inherit;
 }

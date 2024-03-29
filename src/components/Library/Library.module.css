@@ -1,5 +1,18 @@
 .library {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 24px;
-    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+@media screen and (min-width: 800px) {
+    .library {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: center;
+    }
+
+
 }

@@ -1,18 +1,28 @@
 .icon {
     aspect-ratio: 1/1;
-    height: 100px;
+    width: 70%;
     color: var(--light-text-color);
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     border: 3px solid #fff;
-    border-radius: 5px;
+    border-radius: 50%;
     margin: 8px;
     cursor: pointer;
 }
 
 .icon:hover{
-    
     box-shadow: rgba(104, 117, 213, 0.783) 0px 3px 10px;
+}
+
+
+.icon p {
+    padding: 4px;
+} 
+
+@media screen and (min-width: 800px) {
+    .icon {
+        width: 260px;
+    }
 }
