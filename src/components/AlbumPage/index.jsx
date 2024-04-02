@@ -1,5 +1,4 @@
 import AlbumIcon from "../AlbumIcon";
-import { Essence, albums } from "../../data/data";
 import styles from './AlbumPage.module.css'
 
 const AlbumPage = ({album, updateFunction}) => {

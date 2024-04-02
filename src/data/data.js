@@ -1,13 +1,15 @@
 export const Essence = {
-    albumTitle: 'essence',
+    albumTitle: 'Essence',
     artist: 'Elih',
-    songs: ['Boomerang', 'Coffeblues', 'Hear her heartbeat', 'Sacred Road', 'Simple Things', 'Let Go', 'Inner Child', 'Expanding into the Unknown', 'Set my Heart on Fire', 'Returning to the Source']
+    songs: ['Boomerang', 'Coffeblues', 'Hear her heartbeat', 'Sacred Road', 'Simple Things', 'Let Go', 'Inner Child', 'Expanding into the Unknown', 'Set my Heart on Fire', 'Returning to the Source'],
+    cover: '/essence.png'
 }
 
 export const TheCodeOfTheFlowers = {
     albumTitle: 'The Code of the Flowers',
     artist: 'Ayla Nereo',
-    songs: ['Whispers', 'Tightrope Walker', 'Look at the River', 'Seeds', 'Ivory Tongue', 'Little Beckon', 'Waves', 'Turning Wake', 'Wild Burn', 'We Forgot', 'Hum', 'Drive by Fires', 'The Course']
+    songs: ['Whispers', 'Tightrope Walker', 'Look at the River', 'Seeds', 'Ivory Tongue', 'Little Beckon', 'Waves', 'Turning Wake', 'Wild Burn', 'We Forgot', 'Hum', 'Drive by Fires', 'The Course'], 
+    cover: '/thecodeoftheflowers.png'
 }
 
 export const Pellucidity = {
@@ -73,3 +75,4 @@ export const dada = {
 export const albums = [Essence, TheCodeOfTheFlowers, Pellucidity, AnAwesomeWave, ShapeShifter, CaressYourSoul, trala, fideli, album1, heyho, thojo, dada];
 
 export const albumTitles = albums.map(album => album.albumTitle);
+// export const albumCovers = albums.map(album => album.cover);

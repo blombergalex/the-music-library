@@ -21,6 +21,17 @@
     padding: 4px;
 } 
 
+img {
+    display: flex;
+    z-index: -1;
+    /* height: 90%; */
+    height: 200px;
+    margin: 2px;
+    border: 1px solid red;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
 @media screen and (min-width: 800px) {
     .icon {
         width: 260px;
