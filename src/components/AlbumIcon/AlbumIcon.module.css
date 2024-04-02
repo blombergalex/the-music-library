@@ -7,7 +7,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--main-turquoise);
+    border: 2px solid var(--light-accent-color);
     margin: 8px;
     z-index: 2;
 }
@@ -43,6 +43,10 @@ img {
 }
 
 @media screen and (min-width: 1367px) {
+
+    .red {
+        background-color: red;
+    }
 
     img:hover{
         box-shadow: var(--main-turquoise) 0px 3px 20px;

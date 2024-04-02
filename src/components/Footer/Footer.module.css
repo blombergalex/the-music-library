@@ -2,8 +2,14 @@ footer {
     height: fit-content;
     color: var(--dark-color);
     padding: 2px;
+    margin-top: 150px;
     text-align: center;
     font-weight: 600;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-transform: uppercase;
 }
 
 a,
@@ -12,4 +18,17 @@ a:visited {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
+}
+
+@media screen and (min-width:800px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    footer {
+        font-size: 1rem;
+    }
+
 }
