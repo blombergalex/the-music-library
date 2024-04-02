@@ -1,4 +1,5 @@
 import styles from './AlbumIcon.module.css'
+import { albums } from '../../data/data'
 
 const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
     const handleClick = () => {
