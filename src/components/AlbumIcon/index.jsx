@@ -8,8 +8,11 @@ const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
 
     return(
         <div className={styles.icon} onClick={handleClick}>
-            <p>{choice}</p>
             <img src={albumCoverSrc} alt='Album cover'></img>
+            <p className={styles.mobileTitle}>{choice}</p>
+            <div className={styles.overlay}>
+                <p className={styles.desktopTitle}>{choice}</p>
+            </div>
         </div>
     )
 }

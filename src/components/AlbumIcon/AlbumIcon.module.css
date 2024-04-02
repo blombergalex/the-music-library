@@ -1,33 +1,39 @@
 .icon {
     aspect-ratio: 1/1;
+    background-color: black;
     width: 70%;
     color: var(--light-text-color);
     display: flex;
+    position: relative;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 3px solid #fff;
+    border: 2px solid var(--accent-color);
     border-radius: 50%;
     margin: 8px;
-    cursor: pointer;
+    z-index: -2;
 }
 
-.icon:hover{
+img:hover{
     box-shadow: rgba(104, 117, 213, 0.783) 0px 3px 10px;
+    
 }
 
-
-.icon p {
-    padding: 4px;
+.mobileTitle {
+    border-radius: 5px;
+    padding: 8px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(23, 22, 21, 0.827);
+    margin: 10px;
 } 
 
 img {
+    position: absolute;
     display: flex;
-    z-index: -1;
-    /* height: 90%; */
-    height: 200px;
-    margin: 2px;
-    border: 1px solid red;
+    height: 95%;
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
@@ -35,5 +41,36 @@ img {
 @media screen and (min-width: 800px) {
     .icon {
         width: 260px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    
+    .overlay {
+        background-color: rgba(216, 199, 172, 0.711);
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        z-index: -200;
+        cursor: pointer; 
+    }
+    
+    .icon:hover{
+        overlay {
+            z-index: 200;
+        }
+    }
+
+    .desktopTitle {
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .mobileTitle {
+        display: none;
     }
 }
