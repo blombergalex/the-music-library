@@ -24,7 +24,7 @@ const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
         console.log('icon exited')
     }
 
-    const iconClasses = ` ${isHovered ? styles.overlay : ''}`;
+    const iconClasses = `${styles.hide} ${isHovered ? styles.overlay : ''}`;
 
     return(
         <div className={styles.icon} onClick={handleClick}>

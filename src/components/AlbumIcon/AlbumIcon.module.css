@@ -12,23 +12,23 @@
     z-index: 2;
 }
 
-.mobileTitle {
-    padding: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(23, 22, 21, 0.827);
-} 
-
 img {
-    position: absolute;
     display: flex;
+    position: absolute;
     height: 95%;
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
+
+.mobileTitle {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    z-index: 1;
+    background-color: rgba(23, 22, 21, 0.827);
+} 
 
 @media screen and (min-width: 800px) {
     .icon {
@@ -37,6 +37,14 @@ img {
 }
 
 @media screen and (min-width: 1367px) {
+    
+    .hide {
+        display: none;
+    }
+
+    .icon {
+        border-radius: 50%;
+    }
     
     .checkHoverState {
         display: flex;
@@ -47,35 +55,19 @@ img {
         z-index: 1000;
         cursor: pointer; 
     }
-    
-    .red {
-        background-color: red;
-        z-index:500;
-    }
-
-    img:hover{
-        box-shadow: var(--main-turquoise) 0px 3px 20px;
-        
-    }
-
-    .icon {
-    border-radius: 50%;
-    }
-    
     .overlay {
-        background-color: rgba(216, 199, 172, 0.711);
-        color: #000;
         display: flex;
         position: absolute;
         justify-content: center;
         align-items: center;
-        height: 95%;
-        border-radius: 50%;
         aspect-ratio: 1/1;
+        border-radius: 50%;
+        height: 95%;
+        background-color: rgba(216, 199, 172, 0.711);
         text-transform: uppercase;
         text-align: center;
+        color: #000;
         font-weight: 600;
-        margin: 5px;
         font-size: 0.8rem;
     }
     
