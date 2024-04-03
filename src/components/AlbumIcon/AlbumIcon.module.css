@@ -80,15 +80,16 @@ img {
         aspect-ratio: 1/1;
         /* z-index: -200; */
     }
-    
-    img:hover{
-        /* z-index: -300; */
-        cursor: pointer;
-    }
+
 
     .desktopTitle {
+        display: block;
         color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 5px;
         font-weight: 600;
+        z-index: 5000;
     }
     
     .mobileTitle {
