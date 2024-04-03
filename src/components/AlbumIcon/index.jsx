@@ -18,21 +18,21 @@ const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
         setIsHovered(true);
     }
 
-    const handleMouseOut = () => { setIsHovered(false) }
-
-    let iconClass = styles.icon;
-    if (isHovered) {
-        iconClass = `${styles.red}`;
-        console.log('icon hovered')
+    const handleMouseOut = () => { 
+        setIsHovered(false) 
     }
+
+    const iconClasses = `${styles.icon} ${isHovered ? styles.overlay : ''} ${isHovered ? styles.red : ''}`;
 
     return(
         <div 
-        className={styles.icon}
-        onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
+        className={iconClasses}
+        onClick={handleClick} 
+        onMouseEnter={handleMouseEnter} 
+        onMouseOut={handleMouseOut}>
             <img src={albumCoverSrc(choice)} alt='Album cover'></img>
             <p className={styles.mobileTitle}>{choice}</p>
-            <div className={styles.overlay}>
+            <div >
                 <p className={styles.desktopTitle}>{choice}</p>
             </div>
         </div>
