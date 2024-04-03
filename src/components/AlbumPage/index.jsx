@@ -1,4 +1,3 @@
-import AlbumIcon from "../AlbumIcon";
 import BackButton from "../BackButton";
 import styles from './AlbumPage.module.css'
 
