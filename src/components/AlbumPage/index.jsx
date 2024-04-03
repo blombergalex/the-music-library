@@ -1,6 +1,6 @@
 import AlbumIcon from "../AlbumIcon";
+import BackButton from "../BackButton";
 import styles from './AlbumPage.module.css'
-
 
 const AlbumPage = ({album, updateFunction}) => {
     return (
@@ -10,7 +10,7 @@ const AlbumPage = ({album, updateFunction}) => {
             <h4 className={styles.artistName}>{album.artist}</h4> 
             {album.songs.map((song, index) => 
             <p className={styles.songTitle} key={index}>{song} </p> )}
-            < AlbumIcon choice='library' updatePage={updateFunction} /> 
+            < BackButton choice='library' updatePage={updateFunction} />
         </div>
     )
 }
