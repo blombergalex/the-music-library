@@ -1,7 +1,6 @@
 .albumPage {
     height: 100%;
     display: flex;
-    /* flex-direction: column; */
     padding: 16px;
     color: var(--light-text-color);
     margin: 14px;
@@ -30,13 +29,13 @@
     padding: 4px 0;
 }  
 
-img {
+.albumPageImg {
     border: 3px solid var(--light-accent-color);
     width: 40%;
 }
 
 @media screen and (min-width: 800px) {
-    img {
+    .albumPageImg {
         width: 30%;
     }
 }

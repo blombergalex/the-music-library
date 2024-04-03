@@ -21,6 +21,7 @@
 }
 
 .mobileTitle {
+    text-align: center;
     width: 100%;
     padding: 16px;
     color: #fff;
@@ -30,6 +31,10 @@
     background-color: rgba(23, 22, 21, 0.827);
 } 
 
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 800px) {
     .icon {
         width: 260px;
@@ -38,9 +43,6 @@
 
 @media screen and (min-width: 1367px) {
     
-    .hide {
-        display: none;
-    }
 
     .icon {
         border-radius: 50%;
