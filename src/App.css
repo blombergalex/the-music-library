@@ -23,9 +23,6 @@
 }
 
 body {
-  display: flex;
-  height: 100%;
-  background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,68,94,1) 43%, rgba(9,89,121,1) 66%);
   margin: 0;
 }
@@ -34,4 +31,5 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100%;
 }

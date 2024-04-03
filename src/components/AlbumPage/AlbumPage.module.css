@@ -1,21 +1,42 @@
 .albumPage {
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
     padding: 16px;
     color: var(--light-text-color);
-
+    margin: 14px;
 }
+
+.albumArea {
+    width: fit-content;
+}
+
 
 .albumTitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 16px 0 4px 0;
 }
+
+.artistName{
+    margin: 0 0 16px 0;
+    padding: 4px 0;
+    font-weight: 400;
+}
+
+.songTitle {
+    width: fit-content;
+    margin: 4px 0;
+    padding: 4px 0;
+}  
 
 img {
-    
+    border: 3px solid var(--light-accent-color);
+    width: 40%;
 }
 
-.icon {
-    display: none;
-}
-
-.backToHomeBtn {
-    height: 40px;
+@media screen and (min-width: 800px) {
+    img {
+        width: 30%;
+    }
 }

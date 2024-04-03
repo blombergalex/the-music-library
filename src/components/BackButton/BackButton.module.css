@@ -1,5 +1,7 @@
 .backButton {
+    text-align: right;
     width: fit-content;
+    height: fit-content;
     color: var(--light-text-color);
     padding: 5px;
     border-radius: 5px;
