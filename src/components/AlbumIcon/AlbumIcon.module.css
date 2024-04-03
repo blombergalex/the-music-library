@@ -36,6 +36,7 @@ img {
     aspect-ratio: 1/1;
 }
 
+
 @media screen and (min-width: 800px) {
     .icon {
         width: 260px;
@@ -44,8 +45,19 @@ img {
 
 @media screen and (min-width: 1367px) {
     
+    .checkHoverState {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        z-index: 1000;
+        cursor: pointer; 
+    }
+    
     .red {
         background-color: red;
+        z-index:500;
     }
 
     img:hover{
@@ -66,8 +78,7 @@ img {
         height: 95%;
         border-radius: 50%;
         aspect-ratio: 1/1;
-        z-index: -200;
-        cursor: pointer; 
+        /* z-index: -200; */
     }
     
     img:hover{
