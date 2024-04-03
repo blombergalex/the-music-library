@@ -3,7 +3,6 @@ import styles from './AlbumPage.module.css'
 
 
 const AlbumPage = ({album, updateFunction}) => {
-    console.log(album)
     return (
         <div className={styles.albumPage}>
             < img src={album.cover} alt='Album cover'/>

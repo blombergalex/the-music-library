@@ -7,3 +7,15 @@
 .albumTitle {
     font-size: 1.2rem;
 }
+
+img {
+    
+}
+
+.icon {
+    display: none;
+}
+
+.backToHomeBtn {
+    height: 40px;
+}
