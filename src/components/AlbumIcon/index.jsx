@@ -34,7 +34,7 @@ const AlbumIcon = ({choice, chosenAlbum, updatePage}) => {
             <img src={albumCoverSrc(choice)} alt='Album cover'></img>
             <p className={styles.mobileTitle}>{choice}</p>
             <div className={iconClasses}>
-                <p className={styles.desktopTitle}>{choice}</p>
+                {choice}
             </div>
         </div>
     )

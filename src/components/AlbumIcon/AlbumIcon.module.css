@@ -13,8 +13,6 @@
 }
 
 .mobileTitle {
-    justify-self: flex-start;
-    text-align: center;
     padding: 16px;
     color: #fff;
     text-transform: uppercase;
@@ -24,10 +22,6 @@
     background-color: rgba(23, 22, 21, 0.827);
 } 
 
-.desktopTitle {
-    display: none;
-}
-
 img {
     position: absolute;
     display: flex;
@@ -35,7 +29,6 @@ img {
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
-
 
 @media screen and (min-width: 800px) {
     .icon {
@@ -71,6 +64,7 @@ img {
     
     .overlay {
         background-color: rgba(216, 199, 172, 0.711);
+        color: #000;
         display: flex;
         position: absolute;
         justify-content: center;
@@ -78,18 +72,11 @@ img {
         height: 95%;
         border-radius: 50%;
         aspect-ratio: 1/1;
-        /* z-index: -200; */
-    }
-
-
-    .desktopTitle {
-        display: block;
-        color: #000;
         text-transform: uppercase;
         text-align: center;
-        margin: 5px;
         font-weight: 600;
-        z-index: 5000;
+        margin: 5px;
+        font-size: 0.8rem;
     }
     
     .mobileTitle {
