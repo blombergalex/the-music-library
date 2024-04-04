@@ -1,0 +1,11 @@
+.Button {
+    width: fit-content;
+    height: fit-content;
+    color: var(--accent-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.5px solid var(--accent-color);
+    background-color: #020024;
+    font-size: 0.9rem;
+    cursor: pointer;
+}

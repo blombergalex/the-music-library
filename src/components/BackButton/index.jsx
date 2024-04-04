@@ -1,4 +1,4 @@
-import styles from './BackButton.module.css'
+import Button from '../Button'
 
 const BackButton = ({choice, updatePage}) => {
 
@@ -7,7 +7,7 @@ const handleClick = () => {
 }
 
 return(
-    <div className={styles.backButton} onClick={handleClick}>Back to library</div>
+    < Button onClick={handleClick} buttonName={'Back to library'} />
     )
 }
 
