@@ -10,5 +10,6 @@ const AboutPage = (updateFunction) => {
         </div>
     )
 }
+//måste choice importeras för att updatefunction ska funka? så choice blir library vid klick
 
 export default AboutPage
