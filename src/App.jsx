@@ -5,7 +5,6 @@ import Library from './components/Library'
 import Footer from './components/Footer'
 import AlbumPage from './components/AlbumPage'
 import AboutPage from './components/AboutPage'
-import AboutButton from './components/AboutButton'
 
 function App() {
 

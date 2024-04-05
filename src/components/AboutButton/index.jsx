@@ -8,7 +8,7 @@ const handleClick = () => {
 }
 
     return(
-    < Button onClick={handleClick} buttonName={'About'} />
+    < Button onClick={handleClick} buttonName={'About'} className={styles.aboutButton} />
         )
 }
 

@@ -7,7 +7,7 @@ const Footer = ({updateFunction}) => {
     return(
         <footer>
             <p> <a href='https://github.com/blombergalex/the-music-library' target='_blank'>@blombergalex</a> {currentDate}</p>
-            <AboutButton choice='about' updatePage={updateFunction} />
+            <AboutButton choice='about' updatePage={updateFunction} className={styles.aboutButton}/>
         </footer>
     )
 }
