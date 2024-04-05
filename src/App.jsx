@@ -16,7 +16,7 @@ function App() {
         < div className='mainContent'>
           {!page && < Library updateFunction={setPage} />}
           {page && page !== 'about' && < AlbumPage album={page} updateFunction={setPage}/>} 
-          {page === 'about' && <AboutPage />}
+          {page === 'about' && <AboutPage updateFunction={setPage}/>}
         </div>
         < Footer updateFunction={setPage}/>
       </>
