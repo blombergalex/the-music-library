@@ -1,7 +1,8 @@
 import BackButton from '../BackButton'
 import styles from './AboutPage.module.css'
 
-const AboutPage = (updateFunction) => {
+const AboutPage = ({updateFunction}) => {
+    
     return(
         <div className={styles.AboutPage}>
             <h1>About</h1>
@@ -10,6 +11,5 @@ const AboutPage = (updateFunction) => {
         </div>
     )
 }
-//måste choice importeras för att updatefunction ska funka? så choice blir library vid klick
 
 export default AboutPage

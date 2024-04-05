@@ -15,9 +15,9 @@ function App() {
         < div className='mainContent'>
           {!page && < Library updateFunction={setPage} />}
           {page && < AlbumPage album={page} updateFunction={setPage}/>} 
-          {page === 'about'&& <AboutPage updateFunction={setPage}/>}
+          {/* {page === 'about'&& <AboutPage updateFunction={setPage}/>} */}
         </div>
-        < Footer />
+        < Footer updateFunction={setPage}/>
       </>
     )
 }

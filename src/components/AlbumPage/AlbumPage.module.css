@@ -7,7 +7,10 @@
 }
 
 .albumArea {
+    display: flex;
+    flex-direction: column;
     width: fit-content;
+    flex-shrink: 1;
 }
 
 
@@ -37,5 +40,9 @@
 @media screen and (min-width: 800px) {
     .albumPageImg {
         width: 30%;
+    }
+
+    .button{
+        font-size: 2rem;
     }
 }

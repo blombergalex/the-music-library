@@ -11,7 +11,7 @@ const AlbumPage = ({album, updateFunction}) => {
                 {album.songs.map((song, index) => 
                 <p className={styles.songTitle} key={index}>{song} </p> )}
             </div>
-            < BackButton className={styles.backToHomeBtn} choice='library' updatePage={updateFunction} />
+            < BackButton choice='library' updatePage={updateFunction} className={styles.button}/>
         </div>
     )
 }

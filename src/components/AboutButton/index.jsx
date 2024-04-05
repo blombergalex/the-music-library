@@ -1,14 +1,14 @@
 import Button from '../Button'
 import styles from './AboutButton.module.css'
 
-const AboutButton = () => {
+const AboutButton = ({choice, updatePage}) => {
 
 const handleClick = () => {
-    choice === 'about'
+    {choice === 'about' ? updatePage('about') : ''}
 }
 
     return(
-    <Button buttonName={'About'} onClick={handleClick} />
+    < Button onClick={handleClick} buttonName={'About'} />
         )
 }
 
