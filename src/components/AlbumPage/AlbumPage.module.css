@@ -11,6 +11,7 @@
     flex-direction: column;
     width: fit-content;
     flex-shrink: 1;
+    width: 100%;
 }
 
 
@@ -42,7 +43,4 @@
         width: 30%;
     }
 
-    .button{
-        font-size: 2rem;
-    }
 }
